@@ -1,0 +1,848 @@
+Started GET "/" for 127.0.0.1 at 2020-08-21 19:32:04 +0700
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/siri_k/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/siri_k/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.2ms | Allocations: 407)
+Completed 200 OK in 18ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/siri_k/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from block in execute at /home/siri_k/.rvm/rubies/ruby-2.7.1/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281)
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 19:41:49 +0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant MoviesController):
+  
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 22:44:23 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+Zeitwerk::NameError (expected file /home/siri_k/Desktop/Ruby/myrottenpotatoes/app/controllers/movies_controller.rb to define constant MoviesController, but didn't):
+  
+zeitwerk (2.4.0) lib/zeitwerk/loader/callbacks.rb:17:in `on_file_autoloaded'
+zeitwerk (2.4.0) lib/zeitwerk/kernel.rb:28:in `block in require'
+zeitwerk (2.4.0) lib/zeitwerk/kernel.rb:27:in `tap'
+zeitwerk (2.4.0) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (6.0.3.2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.3.2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.3.2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.3.2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.3.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.3.2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.3.2) lib/action_dispatch/http/request.rb:89:in `controller_class_for'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:100:in `binary_params_for?'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:91:in `set_binary_encoding'
+actionpack (6.0.3.2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:47:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20200821155130)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "rating" varchar, "description" text, "release_date" datetime, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200821155130"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-21 15:55:57.620535"], ["updated_at", "2020-08-21 15:55:57.620535"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-08-21 23:29:24 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 23:29:24 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 22.4ms | Allocations: 5452)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.6ms | Allocations: 26110)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+    3:   %head
+    4:     %title RottenPotatoes!
+    5:     = stylesheet_link_tag 'application'
+    6:     = javascript_include_tag 'application'
+    7:     = csrf_meta_tags
+    8: 
+    9:   %body
+  
+app/views/layouts/application.html.haml:6
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 23:37:04 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 20.5ms | Allocations: 5454)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/siri_k/Desktop/Ruby/myrottenpotatoes/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 1954ms
+Built at: 08/21/2020 11:37:07 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3427ms (Views: 3418.8ms | ActiveRecord: 0.4ms | Allocations: 14693)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 23:49:22 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 16.2ms | Allocations: 3876)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms | Allocations: 7361)
+
+
+  
+ActionView::Template::Error (Got "elsif" with no preceding "if"):
+     9:   %body
+    10:     - if flash[:notice]
+    11:     #notice.message= flash[:notice]
+    12:     - elsif flash[:warning]
+    13:     #warning.message= flash[:warning]
+    14:     #main
+    15:       = yield
+  
+app/views/layouts/application.html.haml:12
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 23:50:45 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 4.7ms | Allocations: 3564)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 6597)
+
+
+  
+ActionView::Template::Error (Got "elsif" with no preceding "if"):
+     9:   %body
+    10:     - if flash[:notice]
+    11:     #notice.message= flash[:notice]
+    12:     - elsif flash[:warning]
+    13:     #warning.message= flash[:warning]
+    14:     #main
+    15:       = yield
+  
+app/views/layouts/application.html.haml:12
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 23:51:39 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 4.1ms | Allocations: 3529)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms | Allocations: 13564)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2020-08-21 23:51:45 +0700
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.haml within layouts/application
+  Rendered movies/new.html.haml within layouts/application (Duration: 18.7ms | Allocations: 9127)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 22.9ms | ActiveRecord: 0.4ms | Allocations: 16121)
+
+
+Started POST "/movies" for 127.0.0.1 at 2020-08-21 23:52:49 +0700
+Processing by MoviesController#create as HTML
+  Parameters: {"authenticity_token"=>"Lc2vqlptoiuVzVtdK1r5vUjF4wZ6To9PXZOKGbD6VibIZDeplWjgraMZhremxw60FeNkomOp9CDeJnTjd9DbkA==", "movie"=>{"title"=>"Batman", "rating"=>"PG", "release_date(1i)"=>"2018", "release_date(2i)"=>"2", "release_date(3i)"=>"4"}, "commit"=>"Save Changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 765)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/movies_controller.rb:16:in `create'
+Started GET "/movies" for 127.0.0.1 at 2020-08-21 23:58:26 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.9ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 4561)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2020-08-21 23:58:28 +0700
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.haml within layouts/application
+  Rendered movies/new.html.haml within layouts/application (Duration: 2.4ms | Allocations: 1649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 8113)
+
+
+Started POST "/movies" for 127.0.0.1 at 2020-08-21 23:58:31 +0700
+Processing by MoviesController#create as HTML
+  Parameters: {"authenticity_token"=>"wSwfbuDfcJwDvzFxTY0/Sysh4EJzfCj2uWjUXuEbRBUkhYdtL9oyGjVr7JvAEMhCdgdn5mqbU5k63SqkJjHJow==", "movie"=>{"title"=>"Bat", "rating"=>"G", "release_date(1i)"=>"2020", "release_date(2i)"=>"8", "release_date(3i)"=>"21"}, "commit"=>"Save Changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 828)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/movies_controller.rb:18:in `create'
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:03:29 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 3.3ms | Allocations: 3516)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 10348)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2020-08-22 00:03:31 +0700
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.haml within layouts/application
+  Rendered movies/new.html.haml within layouts/application (Duration: 3.6ms | Allocations: 3594)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6858)
+
+
+Started POST "/movies" for 127.0.0.1 at 2020-08-22 00:03:38 +0700
+Processing by MoviesController#create as HTML
+  Parameters: {"authenticity_token"=>"W8gLtc60LrV7uTrdIFhLOObqnPVcb4bsQK4F4K7kURK+YZO2AbFsM01t5zetxbwxu8wbUUWI/YPDG/saac7cpA==", "movie"=>{"title"=>"Batman", "rating"=>"PG", "release_date(1i)"=>"2020", "release_date(2i)"=>"8", "release_date(3i)"=>"21"}, "commit"=>"Save Changes"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 806)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/movies_controller.rb:18:in `create'
+Started POST "/__web_console/repl_sessions/53efdd797e5d028d50fb370ecb648ade/trace" for 127.0.0.1 at 2020-08-22 00:03:44 +0700
+Started POST "/movies" for 127.0.0.1 at 2020-08-22 00:13:02 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"authenticity_token"=>"W8gLtc60LrV7uTrdIFhLOObqnPVcb4bsQK4F4K7kURK+YZO2AbFsM01t5zetxbwxu8wbUUWI/YPDG/saac7cpA==", "movie"=>{"title"=>"Batman", "rating"=>"PG", "release_date(1i)"=>"2020", "release_date(2i)"=>"8", "release_date(3i)"=>"21"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:18:in `create'
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Batman"], ["rating", "PG"], ["release_date", "2020-08-21 00:00:00"], ["created_at", "2020-08-21 17:13:02.111439"], ["updated_at", "2020-08-21 17:13:02.111439"]]
+  ↳ app/controllers/movies_controller.rb:18:in `create'
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/movies
+Completed 302 Found in 18ms (ActiveRecord: 4.7ms | Allocations: 7855)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:13:02 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.5ms | Allocations: 692)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 4107)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:13:10 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 2.4ms | Allocations: 653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 3866)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:13:11 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.6ms | Allocations: 653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 3872)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:13:11 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.3ms | Allocations: 661)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 3888)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:13:11 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.2ms | Allocations: 653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3874)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2020-08-22 00:13:13 +0700
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.haml within layouts/application
+  Rendered movies/new.html.haml within layouts/application (Duration: 3.9ms | Allocations: 1645)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4860)
+
+
+Started POST "/movies" for 127.0.0.1 at 2020-08-22 00:13:26 +0700
+Processing by MoviesController#create as HTML
+  Parameters: {"authenticity_token"=>"NZM3uU+sqypNgaTWiwuC+g8Kx3CyMDSUvhgWloLD/BbQOq+6gKnprHtVeTwGlnXzUixA1KvXT/s9rehsRelxoA==", "movie"=>{"title"=>"spiderman", "rating"=>"G", "release_date(1i)"=>"2016", "release_date(2i)"=>"8", "release_date(3i)"=>"21"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:18:in `create'
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "spiderman"], ["rating", "G"], ["release_date", "2016-08-21 00:00:00"], ["created_at", "2020-08-21 17:13:26.319614"], ["updated_at", "2020-08-21 17:13:26.319614"]]
+  ↳ app/controllers/movies_controller.rb:18:in `create'
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:18:in `create'
+Redirected to http://127.0.0.1:3000/movies
+Completed 302 Found in 15ms (ActiveRecord: 9.1ms | Allocations: 3881)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:13:26 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.5ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 3917)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:18:35 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 4.8ms | Allocations: 3731)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 10540)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:19:47 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 4.8ms | Allocations: 3716)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 10521)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:19:48 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 3.1ms | Allocations: 790)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 4010)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:19:48 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.4ms | Allocations: 784)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 4001)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:28:36 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  Rendered movies/show.html.haml within layouts/application (Duration: 15.3ms | Allocations: 10173)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms | Allocations: 11986)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Movie::ActiveRecord_Relation:0x00007f5ce018fb70>):
+    1: %h2 Details about #{@movie.title}
+    2: %h1 = @movie.title
+    3: 
+    4: %ul#details
+  
+app/views/movies/show.html.haml:1
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:29:04 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  Rendered movies/show.html.haml within layouts/application (Duration: 12.6ms | Allocations: 9918)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.3ms | Allocations: 11914)
+
+
+  
+ActionView::Template::Error (undefined method `rating' for #<Movie::ActiveRecord_Relation:0x00007f5ce05a4ad0>):
+    4: %ul#details
+    5:   %li
+    6:     Rating:
+    7:     = @movie.rating
+    8:   %li
+    9:     Released on:
+   10:     = @movie.release_date.strftime("%B %d, %Y")
+  
+app/views/movies/show.html.haml:7
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:29:05 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  Rendered movies/show.html.haml within layouts/application (Duration: 5.2ms | Allocations: 4165)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4692)
+
+
+  
+ActionView::Template::Error (undefined method `rating' for #<Movie::ActiveRecord_Relation:0x000055d9e9fa5140>):
+    4: %ul#details
+    5:   %li
+    6:     Rating:
+    7:     = @movie.rating
+    8:   %li
+    9:     Released on:
+   10:     = @movie.release_date.strftime("%B %d, %Y")
+  
+app/views/movies/show.html.haml:7
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:33:19 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  Rendered movies/show.html.haml within layouts/application (Duration: 7.6ms | Allocations: 6584)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 7846)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Movie::ActiveRecord_Relation:0x00007f5ce0107040>):
+    1: %h2 Details about #{@movie.title}
+    2: 
+    3: %ul#details
+    4:   %li
+  
+app/views/movies/show.html.haml:1
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:33:20 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  Rendered movies/show.html.haml within layouts/application (Duration: 4.9ms | Allocations: 4164)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 4691)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Movie::ActiveRecord_Relation:0x00007f5ce04dc7b0>):
+    1: %h2 Details about #{@movie.title}
+    2: 
+    3: %ul#details
+    4:   %li
+  
+app/views/movies/show.html.haml:1
+Started GET "/movies/" for 127.0.0.1 at 2020-08-22 00:33:28 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 3.9ms | Allocations: 3745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 9970)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:33:33 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 11]]
+  Rendered movies/show.html.haml within layouts/application (Duration: 4.9ms | Allocations: 4165)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 4680)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Movie::ActiveRecord_Relation:0x00007f5ce05e9928>):
+    1: %h2 Details about #{@movie.title}
+    2: 
+    3: %ul#details
+    4:   %li
+  
+app/views/movies/show.html.haml:1
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:35:51 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 0.4ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 5.2ms | ActiveRecord: 0.8ms | Allocations: 8277)
+
+
+Started GET "/movies/1/edit" for 127.0.0.1 at 2020-08-22 00:37:52 +0700
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:26:in `edit'
+  Rendering movies/edit.html.haml within layouts/application
+  Rendered movies/edit.html.haml within layouts/application (Duration: 5.0ms | Allocations: 3636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 7420)
+
+
+Started PUT "/movies/1" for 127.0.0.1 at 2020-08-22 00:37:59 +0700
+Processing by MoviesController#update as HTML
+  Parameters: {"authenticity_token"=>"mAVMc3gUPvKDooQ4WAhTCZsj7sLlWtxmtk5yCQoUkGk1/wPvoL+rrREza7E6iUB164Df2wJFTi0BCzRD56yviw==", "movie"=>{"title"=>"Batman", "rating"=>"PG", "release_date(1i)"=>"2020", "release_date(2i)"=>"8", "release_date(3i)"=>"21"}, "commit"=>"Save Changes", "id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:30:in `update'
+DEPRECATION WARNING: update_attributes! is deprecated and will be removed from Rails 6.1 (please, use update! instead) (called from update at /home/siri_k/Desktop/Ruby/myrottenpotatoes/app/controllers/movies_controller.rb:32)
+Redirected to http://127.0.0.1:3000/movies/1
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1429)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:37:59 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 0.5ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 3872)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:38:02 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.5ms | Allocations: 806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 4025)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2020-08-22 00:38:09 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 0.6ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 3857)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2020-08-22 00:39:17 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 2.8ms | Allocations: 2761)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 10085)
+
+
+Started GET "/movies/2/edit" for 127.0.0.1 at 2020-08-22 00:39:24 +0700
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:26:in `edit'
+  Rendering movies/edit.html.haml within layouts/application
+  Rendered movies/edit.html.haml within layouts/application (Duration: 3.9ms | Allocations: 3629)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 7405)
+
+
+Started PUT "/movies/2" for 127.0.0.1 at 2020-08-22 00:39:26 +0700
+Processing by MoviesController#update as HTML
+  Parameters: {"authenticity_token"=>"8/m9wrDnJkM3TYeC8RoHmIjGJ3YUxGnm7Mh01e5wmjQyH4wXu9v/KieoMUTvR8xeYb9G7EWnMsntaHp9jqhyRg==", "movie"=>{"title"=>"spiderman", "rating"=>"G", "release_date(1i)"=>"2016", "release_date(2i)"=>"8", "release_date(3i)"=>"21"}, "commit"=>"Save Changes", "id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:30:in `update'
+DEPRECATION WARNING: update_attributes! is deprecated and will be removed from Rails 6.1 (please, use update! instead) (called from update at /home/siri_k/Desktop/Ruby/myrottenpotatoes/app/controllers/movies_controller.rb:32)
+Redirected to http://127.0.0.1:3000/movies/2
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms | Allocations: 1393)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2020-08-22 00:39:26 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 0.4ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 3930)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:39:27 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 4.3ms | Allocations: 3722)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 6981)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2020-08-22 00:39:31 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 0.4ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 3897)
+
+
+Started DELETE "/movies/1" for 127.0.0.1 at 2020-08-22 00:39:33 +0700
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aTWZhDTr3ugURK7lwBGN/Ba3B2z55S+JfD1/F2RbR6nR/8cDiyDBcRWQmdPko7wOkmIq+cWkATQSxzuEr2g3rQ==", "id"=>"1"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:39:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:40:in `destroy'
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/movies_controller.rb:40:in `destroy'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/movies
+Completed 302 Found in 15ms (ActiveRecord: 4.4ms | Allocations: 3742)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:39:33 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 2.2ms | Allocations: 709)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 3950)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2020-08-22 00:39:37 +0700
+Processing by MoviesController#new as HTML
+  Rendering movies/new.html.haml within layouts/application
+  Rendered movies/new.html.haml within layouts/application (Duration: 3.9ms | Allocations: 3594)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 6855)
+
+
+Started POST "/movies" for 127.0.0.1 at 2020-08-22 00:40:08 +0700
+Processing by MoviesController#create as HTML
+  Parameters: {"authenticity_token"=>"dupniecaS+VqVg5cEaVZ+rXoWTEH8fmQMcyoWCj7ueyTQ/+KKB8JY1yC07acOK7z6M7elR4Wgv+yeVai79E0Wg==", "movie"=>{"title"=>"no game no life", "rating"=>"PG-13", "release_date(1i)"=>"2015", "release_date(2i)"=>"11", "release_date(3i)"=>"2"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:20:in `create'
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "no game no life"], ["rating", "PG-13"], ["release_date", "2015-11-02 00:00:00"], ["created_at", "2020-08-21 17:40:08.232354"], ["updated_at", "2020-08-21 17:40:08.232354"]]
+  ↳ app/controllers/movies_controller.rb:20:in `create'
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:20:in `create'
+Redirected to http://127.0.0.1:3000/movies
+Completed 302 Found in 11ms (ActiveRecord: 4.4ms | Allocations: 3878)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:40:08 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 2.3ms | Allocations: 787)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 4035)
+
+
+Started GET "/movies/3" for 127.0.0.1 at 2020-08-22 00:40:12 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 0.8ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 3895)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 00:40:15 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.5ms | Allocations: 785)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 4002)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-22 19:50:52 +0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 19:50:52 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 41.3ms | Allocations: 9516)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 99ms (Views: 87.2ms | ActiveRecord: 1.6ms | Allocations: 20683)
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2020-08-22 19:51:23 +0700
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9:in `show'
+  Rendering movies/show.html.haml within layouts/application
+  Rendered movies/show.html.haml within layouts/application (Duration: 3.9ms | Allocations: 2708)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 8900)
+
+
+Started DELETE "/movies/2" for 127.0.0.1 at 2020-08-22 20:22:40 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5wkBrj5NZoeTepHwEV+O3KvIHgpLAyKhy4Lfv9AX+QmqRutmyzamr/9bmnJh++GsjOdAJAjuxmKvDIACH/7oWA==", "id"=>"2"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:39:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:40:in `destroy'
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/movies_controller.rb:40:in `destroy'
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:40:in `destroy'
+Redirected to http://127.0.0.1:3000/movies
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms | Allocations: 3777)
+
+
+Started GET "/movies" for 127.0.0.1 at 2020-08-22 20:22:40 +0700
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.haml within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.haml:11
+  Rendered movies/index.html.haml within layouts/application (Duration: 1.4ms | Allocations: 731)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 3939)
+
+
