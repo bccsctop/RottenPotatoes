@@ -5,5 +5,5 @@ class Review < ActiveRecord::Base
   validates :movie_id, :presence => true
   # can ALSO require that the referenced movie itself be valid
   #  in order for the review to be valid:
-  validates_associated :movie
+  #validates_associated :movie
   end
