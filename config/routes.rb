@@ -3,6 +3,7 @@ Myrottenpotatoes::Application.routes.draw do
   root :to => redirect('/movies')
 
   get  'auth/:provider/callback' => 'sessions#create'
+  get  'auth/:provider' => 'sessions#loginbefore'
   get  'auth/failure' => 'sessions#failure'
   get  'auth/twitter', :as => 'login'
   post 'logout' => 'sessions#destroy'
