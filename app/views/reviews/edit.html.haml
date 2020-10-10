@@ -1,0 +1,12 @@
+%h2 Edit Review
+
+= form_tag movie_review_path(@movie,@review), :method => :put do
+
+  %label How many potatoes:
+  = select_tag 'review[potatoes]', options_for_select(1..5)
+
+  = label :review, :comments, "Comment"
+  = text_area :review, :comments
+
+  = submit_tag 'Save Changes'
+  = link_to "Cancel", movie_path(@movie)

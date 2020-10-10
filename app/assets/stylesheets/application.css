@@ -60,12 +60,16 @@ form label {
   display: block;
   line-height: 25px;
   font-weight: bold;
-
-
-
-
-
-
-
-
   color: maroon;
+}
+
+banner{
+  color: maroon;
+  font-size: 350%;
+  font-style: bold;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid maroon;
+  background: wheat;
+  text-align: center;
+}

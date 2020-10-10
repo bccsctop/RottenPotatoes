@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   skip_before_action :authenticate!, only: [ :show, :index ]
   def index
-    @movies = Movie.all
+    @movies = Movie.all.order('title')
   end
 
   def show
@@ -16,10 +16,10 @@ class MoviesController < ApplicationController
 
   def create
     params.require(:movie)
-    permitted = params[:movie].permit(:title,:rating,:release_date)
+    permitted = params[:movie].permit(:title, :rating, :release_date, :description)
     @movie = Movie.create!(permitted)
     flash[:notice] = "#{@movie.title} was successfully created."
-    redirect_to movies_path
+    redirect_to movie_path(@movie)
   end
 
   def edit
@@ -28,7 +28,7 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find params[:id]
-    permitted = params[:movie].permit(:title,:rating,:release_date)
+    permitted = params[:movie].permit(:title,:rating,:release_date,:description)
     @movie.update_attributes!(permitted)
 
     flash[:notice] = "#{@movie.title} was successfully updated."
