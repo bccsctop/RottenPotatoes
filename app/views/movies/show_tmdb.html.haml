@@ -1,27 +1,31 @@
+%h1 All Movies
+
 %h1 Search TMDb for a movie
 
 = form_tag :action => 'search_tmdb' do
   <label for='search_terms'>Search Terms</label>
   <input id="search_terms" name="search_terms" type="text" />
   = submit_tag 'Search TMDb'
-
-%h1 All Movies
+  <br>
+= link_to 'Back to main menu', movies_path
 
 %table#movies
   %thead
     %tr
       %th Index
+      %th Image
       %th Movie Title
-      %th Rating
       %th Release Date
       %th More Info
   %tbody
-    - @movies.each_with_index do |movie,index|
+    - @search.each_with_index do |movie,index|
       %tr
-      %td= index + 1
+      %td= index+1
+      %td 
+        %img{:src => 'https://image.tmdb.org/t/p/w300' + movie.poster_path.to_s}
+
       %td= movie.title
-      %td= movie.rating
       %td= movie.release_date
       %td= link_to "More about #{movie.title}", movie_path(movie)
-      
-= link_to 'Add new movie', new_movie_path
+
+= link_to 'Back to main menu', movies_path

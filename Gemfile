@@ -13,7 +13,7 @@ group :production do
 end
 
 #group :development do
-  #gem 'sqlite3', '~> 1.4'
+#  gem 'sqlite3', '~> 1.4'
 #end
 
 
@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'haml'
 gem 'omniauth-twitter'
 gem 'jquery-rails'
+gem 'themoviedb'
 
 
 # Use Active Storage variant
