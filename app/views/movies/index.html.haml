@@ -5,10 +5,19 @@
   <input id="search_terms" name="search_terms" type="text" />
   = submit_tag 'Search TMDb'
   
-<label for="filter">Only movies suitable for children</label>
-<input type="checkbox" id="filter"/>
 
 %h1 All Movies
+
+<label for="G_filter">G</label>
+<input type="checkbox" id="G_filter" checked/>
+<label for="PG_filter">PG</label>
+<input type="checkbox" id="PG_filter" checked/>
+<label for="PG-13_filter">PG-13</label>
+<input type="checkbox" id="PG-13_filter" checked/>
+<label for="R_filter">R</label>
+<input type="checkbox" id="R_filter" checked/>
+<label for="NC-17_filter">NC-17</label>
+<input type="checkbox" id="NC-17_filter" checked/>
 
 %table#movies
   %thead
@@ -20,11 +29,11 @@
       %th More Info
   %tbody
     - @movies.each_with_index do |movie,index|
-      %tr
-      %td= index + 1
-      %td= movie.title
-      %td= movie.rating
-      %td= movie.release_date
-      %td= link_to "More about #{movie.title}", movie_path(movie)
+      %tr{ class: movie.rating }
+        %td= index + 1
+        %td= movie.title
+        %td= movie.rating
+        %td= movie.release_date
+        %td= link_to "More about #{movie.title}", movie_path(movie)
       
 = link_to 'Add new movie', new_movie_path

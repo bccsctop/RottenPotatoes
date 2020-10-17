@@ -8,6 +8,7 @@
 
   %body
     %banner= link_to "Rotten Potatoes", movies_path
+
     - if flash[:notice]
       #notice.message= flash[:notice]
     - elsif flash[:warning]
@@ -18,6 +19,7 @@
       = link_to 'Log Out', logout_path, :method => :post
     - else
       = link_to 'Log in with your Twitter account', OmniAuth.login_path(:twitter)
+      
     #main
       = yield
       = javascript_pack_tag 'custom'

@@ -14,7 +14,7 @@
 
 %h3 Review:
 - @movie.reviews.each do |review|
-  %tr{:class => ('adult' unless movie.rating =~ /^G|PG$/)}
+  %tr
   %td= review.moviegoer.name
   %td= review.potatoes
   %td= review.comments
