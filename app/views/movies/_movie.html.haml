@@ -1,4 +1,37 @@
-%p= movie.description
+%h2 Details about #{@movie.title}
 
+%ul#details
+  %li
+    Rating:
+    = @movie.rating
+  %li
+    Released on:
+    = @movie.release_date.strftime("%B %d, %Y")
+
+%h3 Description:
+
+%p#description= @movie.description
+
+%h3 Review:
+- @movie.reviews.each do |review|
+  %tr{:class => ('adult' unless movie.rating =~ /^G|PG$/)}
+  %td= review.moviegoer.name
+  %td= review.potatoes
+  %td= review.comments
+  %td= review.id
+  
+  - if @current_user.name == review.moviegoer.name
+    %td= link_to 'Edit Review', edit_movie_review_path(@movie.id,review.id)
+    %td= link_to 'Delete', movie_review_path(@movie,review), :method => :delete
+  %br
+
+%br
+%br
+
+= link_to 'Add Review', new_movie_review_path(@movie)
+%br
 = link_to 'Edit Movie', edit_movie_path(@movie)
+%br
+= link_to 'Delete', movie_path(@movie), :method => :delete
+%br
 = link_to 'Close', '',{:id => 'closeLink'}

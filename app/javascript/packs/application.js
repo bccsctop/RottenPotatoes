@@ -10,6 +10,7 @@ require("channels")
 require("jquery")
 require("bootstrap")
 require("packs/custom")
+require("packs/movie_list_filter")
 
 
 var MoviePopup = {
