@@ -20,12 +20,12 @@
   %tbody
     - @search.each_with_index do |movie,index|
       %tr
-      %td= index+1
-      %td 
+      %td{:width => "10%;"}= index+1
+      %td
         %img{:src => 'https://image.tmdb.org/t/p/w300' + movie.poster_path.to_s}
 
-      %td= movie.title
+      %td{:width => "25%;"}= movie.title
       %td= movie.release_date
-      %td= link_to "More about #{movie.title}", movie_path(movie)
+      %td{:width => "30%;"}= movie.overview
 
 = link_to 'Back to main menu', movies_path

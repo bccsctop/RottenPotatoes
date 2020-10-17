@@ -48,6 +48,11 @@ class MoviesController < ApplicationController
     @search_params = params[:search_terms]
     @search_params = " " if @search_params  == ""
     @search = Tmdb::Movie.find(@search_params)
+    @search.each do |movie|
+      if Movie.exists?(:title => movie.title, :description => movie.overview) == false
+        create_tmdb(movie)
+      end
+    end
     
     if @search != []
       render "show_tmdb"
@@ -58,17 +63,15 @@ class MoviesController < ApplicationController
 
   end
 
+  def create_tmdb(movie)
+    permitted = {:title => movie.title,:rating =>"G" ,:release_date =>movie.release_date,:description => movie.overview}
+    @movie = Movie.create!(permitted)
+  end
+
   def show_tmdb
     id = params[:id] # retrieve movie ID from URI route
     @movie = Movie.find(id) # look up movie by unique ID
     render(:partial => 'movie', :object => @movie) if request.xhr?
-  end
-
-  def movies_with_filters
-    @movies = Movie.with_good_reviews(params[:threshold])
-    @movies = @movies.for_kids          if params[:for_kids]
-    @movies = @movies.with_many_fans    if params[:with_many_fans]
-    @movies = @movies.recently_reviewed if params[:recently_reviewed]
   end
   
 end

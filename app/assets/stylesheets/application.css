@@ -77,7 +77,7 @@ banner{
 
 #movieInfo {
   padding: 2ex;
-  position: absolute;
+  position: fixed;
   border: 2px double grey;
   background: wheat;
 }
