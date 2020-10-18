@@ -9,8 +9,9 @@ class Movie < ActiveRecord::Base
       raise Movie::InvalidKeyError, 'Invalid API key'
     end
   end
+
   def name_with_rating
     "#{self.title} (#{self.rating})"
   end
-  # rest of file elided for brevity
+  
 end
