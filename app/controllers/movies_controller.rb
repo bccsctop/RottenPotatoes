@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
-  skip_before_action :authenticate!, only: [ :show, :index ]
+  #skip_before_action :authenticate!, only: [ :show, :index ]
+  #skip_before_action :set_current_user, only: [ :show, :index ,:new ,:create,:search_tmdb,:show_tmdb,:destroy]
   def index
     @movies = Movie.all.order('title')
   end
@@ -48,11 +49,11 @@ class MoviesController < ApplicationController
     @search_params = params[:search_terms]
     @search_params = " " if @search_params  == ""
     @search = Tmdb::Movie.find(@search_params)
-    @search.each do |movie|
-      if Movie.exists?(:title => movie.title, :description => movie.overview) == false
-        create_tmdb(movie)
-      end
-    end
+    #@search.each do |movie|
+    #  if Movie.exists?(:title => movie.title, :description => movie.overview) == false
+        #create_tmdb(movie)
+    #  end
+    #end
     
     if @search != []
       render "show_tmdb"

@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
         redirect_to root_path
     end
     def loginbefore
-        flash[:notice] = 'Login'
+        flash[:notice] = 'Please Login'
         redirect_to root_path
     end
 end

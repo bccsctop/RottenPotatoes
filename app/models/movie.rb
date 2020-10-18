@@ -1,10 +1,16 @@
 class Movie < ActiveRecord::Base
-    has_many :reviews
-    scope :with_good_reviews, lambda { |threshold|
-    Movie.joins(:reviews).group(:movie_id).
-      having(['AVG(reviews.potatoes) > ?', threshold.to_i])
-  }
-  scope :for_kids, lambda {
-    Movie.where('rating in (?)', %w(G PG))
-  }
+  has_many :reviews
+  class Movie::InvalidKeyError < StandardError ; end
+
+  def self.find_in_tmdb(string)
+    begin
+      Tmdb::Movie.find(string)
+    rescue Tmdb::InvalidApiKeyError
+      raise Movie::InvalidKeyError, 'Invalid API key'
+    end
+  end
+  def name_with_rating
+    "#{self.title} (#{self.rating})"
+  end
+  # rest of file elided for brevity
 end
