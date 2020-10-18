@@ -14,6 +14,6 @@ Myrottenpotatoes::Application.routes.draw do
   post 'logout' => 'sessions#destroy'
 
   #TMDB
-  post '/movies/show_tmdb' => 'movies#search_tmdb'
+  post '/movies/show_tmdb' => 'movies#search_tmdb', :as => 'search_tmdb'
 
 end

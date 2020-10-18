@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   skip_before_action :authenticate!, only: [ :show, :index ]
+  #skip_before_action :authenticate!, :set_current_user, only: [ :show, :index ,:new ,:create,:search_tmdb,:show_tmdb,:destroy]
   def index
     @movies = Movie.all.order('title')
   end

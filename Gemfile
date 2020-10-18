@@ -16,6 +16,17 @@ group :development do     #same as above
   gem 'sqlite3', '~> 1.4'
 end
 
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions  
+  gem 'database_cleaner' # to clear Cucumber's test database between runs
+  gem 'capybara'         # lets Cucumber pretend to be a web browser
+  gem 'launchy'          # a useful debugging aid for user stories
+  gem 'metric_fu'
+  gem 'rails-controller-testing'
+  gem 'simplecov', :require => false
+end
+
 gem 'listen', '~> 3.2'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
