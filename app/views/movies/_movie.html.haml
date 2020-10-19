@@ -13,18 +13,23 @@
 %p#description= @movie.description
 
 %h3 Review:
-- @movie.reviews.each do |review|
-  %tr
-  %td= review.moviegoer.name
-  %td= review.potatoes
-  %td= review.comments
-  %td= review.id
-  
-  - if @current_user.name == review.moviegoer.name
-    %td= link_to 'Edit Review', edit_movie_review_path(@movie.id,review.id)
-    %td= link_to 'Delete', movie_review_path(@movie,review), :method => :delete
-  %br
 
+%table#review
+  %tr
+    %th User
+    %th Patatoe
+    %th Comment
+  - @movie.reviews.each do |review|
+    %tr
+      %td{width: "15%;"}= review.moviegoer.name
+      %td{width: "10%;"}= review.potatoes
+      %td{width: "20%;"}= review.comments  
+      - if @current_user.name == review.moviegoer.name
+        %td{width: "15%;"}= link_to 'Edit Review', edit_movie_review_path(@movie.id,review.id)
+        %td{width: "10%;"}= link_to 'Delete', movie_review_path(@movie,review), :method => :delete
+      %br
+
+%br
 %br
 %br
 

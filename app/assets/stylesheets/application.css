@@ -51,6 +51,20 @@ table#movies th, table#movies td {
   padding: 4px;
   text-align: left;
 }
+
+table#review tr:nth-child(even) {background-color: rgb(255, 255, 255);}
+table#review tr:nth-child(odd) {background-color: rgb(243, 243, 243);}
+
+table#review {
+  border-collapse: collapse;
+  width:  80%;
+}
+
+table#review tr, table#review td{
+  text-align: left;
+  padding: 8px;
+}
+
 #notice, #warning {
   background: rosybrown;
   margin: 1em 0;
