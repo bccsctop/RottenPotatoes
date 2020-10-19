@@ -19,6 +19,7 @@
     %th User
     %th Patatoe
     %th Comment
+  
   - @movie.reviews.each do |review|
     %tr
       %td{width: "15%;"}= review.moviegoer.name

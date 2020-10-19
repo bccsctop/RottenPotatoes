@@ -45,7 +45,7 @@ table#movies {
 table#movies th {
   border: 2px solid white;
   font-weight: bold;
-  background-color: wheat;
+  background-color: peachpuff;
 }
 table#movies th, table#movies td {
   padding: 4px;
@@ -84,8 +84,9 @@ banner{
   display: block;
   width: 100%;
   border-bottom: 1px solid maroon;
-  background: wheat;
+  background: peachpuff;
   text-align: center;
+  position: sticky;
 }
 
 
@@ -93,7 +94,7 @@ banner{
   padding: 2ex;
   position: fixed;
   border: 2px double grey;
-  background: wheat;
+  background: peachpuff;
 }
 
 img{
